@@ -1,0 +1,204 @@
+[
+  {
+    "count": 1,
+    "name": "Gear Slot - Helmet",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Body Armour",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Belt",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Boots",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Gloves",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Main Hand",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Off Hand",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Amulet",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Ring",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Gear Slot - Relic",
+    "category": [
+      "Gear Slot"
+    ],
+    "progression": true
+  },
+  {
+    "count": "8",
+    "name": "Idol Slot",
+    "category": [],
+    "filler": true
+  },
+  {
+    "count": "15",
+    "name": "Passive Point",
+    "category": [],
+    "progression": true
+  },
+  {
+    "count": "5",
+    "name": "Maximum Potions",
+    "category": [],
+    "useful": true
+  },
+  {
+    "count": 1,
+    "name": "Lightless Arbor Access",
+    "category": [
+      "Dungeon"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Soulfire Bastion Access",
+    "category": [
+      "Dungeon"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Temporal Sanctum Access",
+    "category": [
+      "Dungeon"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 2 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 3 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 4 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 5 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 6 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 7 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 8 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": 1,
+    "name": "Chapter 9 Access",
+    "category": [
+      "Chapter"
+    ],
+    "progression": true
+  },
+  {
+    "count": "0",
+    "name": "Reset current area / Return to last waypoint",
+    "category": [
+      "Trap"
+    ],
+    "trap": true
+  },
+  {
+    "count": "0",
+    "name": "Remove all Movement Speed items until next area",
+    "category": [
+      "Trap"
+    ],
+    "trap": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
+  "game": "LastEpoch",
+  "creator": "Ocean",
+  "filler_item_name": "0 XP",
+  "starting_items": [
+    {
+      "item_categories": [
+        "Gear Slot"
+      ],
+      "random": 1
+    }
+  ]
+}

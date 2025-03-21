@@ -1,0 +1,58 @@
+{
+  "Chapter 1": {
+    "starting": true,
+    "connects_to": [
+      "Chapter 2"
+    ],
+    "requires": []
+  },
+  "Chapter 2": {
+    "connects_to": [
+      "Chapter 3",
+      "Chapter 4"
+    ],
+    "requires": "|Chapter 2 Access|"
+  },
+  "Chapter 3": {
+    "connects_to": [
+      "Chapter 4"
+    ],
+    "requires": "|Chapter 3 Access|"
+  },
+  "Chapter 4": {
+    "connects_to": [
+      "Chapter 5",
+      "Chapter 7"
+    ],
+    "requires": "|Chapter 4 Access| OR (|Chapter 2 Access| AND |Lightless Arbor Access|)"
+  },
+  "Chapter 5": {
+    "connects_to": [
+      "Chapter 6",
+	  "Chapter 9"
+    ],
+    "requires": "|Chapter 5 Access|"
+  },
+  "Chapter 6": {
+    "connects_to": [
+      "Chapter 7"
+    ],
+    "requires": "|Chapter 6 Access|"
+  },
+  "Chapter 7": {
+    "connects_to": [
+      "Chapter 8"
+    ],
+    "requires": "|Chapter 7 Access| OR (|Chapter 4 Access| AND |Soulfire Bastion Access|) OR (|Chapter 2 Access| AND |Lightless Arbor Access| AND |Soulfire Bastion Access|)"
+  },
+  "Chapter 8": {
+    "connects_to": [
+      "Chapter 9"
+    ],
+    "requires": "|Chapter 8 Access|"
+  },
+  "Chapter 9": {
+    "connects_to": [],
+    "requires": "|Chapter 9 Access| OR (|Chapter 5 Access| AND |Temporal Sanctum Access|)"
+  }
+}

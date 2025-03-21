@@ -1,0 +1,692 @@
+[
+    {
+        "name": "Quest - To Keeper's Camp",
+        "region": "Chapter 1",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Keepers",
+        "region": "Chapter 1",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Keepers Vault",
+        "region": "Chapter 1",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Storeroom Saboteurs",
+        "region": "Chapter 1",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Missing in the Highland",
+        "region": "Chapter 1",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Shard",
+        "region": "Chapter 1",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 1 Completion",
+        "region": "Chapter 1",
+        "category": [
+            "Chapter"
+        ],
+        "requires": "|Chapter 2 Access|"
+    },
+    {
+        "region": "Chapter 2",
+        "name": "Quest - The Last Refuge",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Void Assault",
+        "region": "Chapter 2",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Evacuation",
+        "region": "Chapter 2",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Finding Pannion",
+        "region": "Chapter 2",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Ezra's Ledger",
+        "region": "Chapter 2",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Saving Last Refuge",
+        "region": "Chapter 2",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Armoury Aid",
+        "region": "Chapter 2",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - An Ancient Path",
+        "region": "Chapter 2",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Upper District",
+        "region": "Chapter 2",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 2 Completion",
+        "region": "Chapter 2",
+        "category": [
+            "Chapter"
+        ],
+        "requires": "|Chapter 3 Access|"
+    },
+    {
+        "name": "Quest - The Ruined World",
+        "region": "Chapter 3",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Lesser Refuge",
+        "region": "Chapter 3",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - An Ancient Hunt",
+        "region": "Chapter 3",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Sanity in the Darkness",
+        "region": "Chapter 3",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Clearing the Ruins",
+        "region": "Chapter 3",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Last Imperial",
+        "region": "Chapter 3",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Symbol of Hope",
+        "region": "Chapter 3",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Ruined Temple",
+        "region": "Chapter 3",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 3 Completion",
+        "region": "Chapter 3",
+        "category": [
+            "Chapter"
+        ],
+        "requires": "|Chapter 4 Access|"
+    },
+    {
+        "name": "Quest - The Power of Mastery",
+        "region": "Chapter 4",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Immortal Empire",
+        "region": "Chapter 4",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - An Introduction to Crafting",
+        "region": "Chapter 4",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - A Study in Time",
+        "region": "Chapter 4",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Corrupted Lake",
+        "region": "Chapter 4",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Admiral's Dreadnought",
+        "region": "Chapter 4",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 4 Completion",
+        "region": "Chapter 4",
+        "category": [
+            "Chapter"
+        ],
+        "requires": "|Chapter 5 Access|"
+    },
+    {
+        "name": "Quest - The Oracle's Aid",
+        "region": "Chapter 5",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Hidden Gems",
+        "region": "Chapter 5",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Desert Waystation",
+        "region": "Chapter 5",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Sapphire Tablet",
+        "region": "Chapter 5",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 5 Completion",
+        "region": "Chapter 5",
+        "category": [
+            "Chapter"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Journey to the Necropolis",
+        "region": "Chapter 6",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Immortal Citadel",
+        "region": "Chapter 6",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Alric's Revenge",
+        "region": "Chapter 6",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 6 Completion",
+        "region": "Chapter 6",
+        "category": [
+            "Chapter"
+        ],
+        "requires": "|Chapter 7 Access|"
+    },
+    {
+        "name": "Quest - Rahyeh's Warpath",
+        "region": "Chapter 7",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Temple of Heorot",
+        "region": "Chapter 7",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - A Heoborean Cure",
+        "region": "Chapter 7",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Wrath of the Wengari",
+        "region": "Chapter 7",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Liberating the Nomads",
+        "region": "Chapter 7",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Lance of Heorot",
+        "region": "Chapter 7",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 7 Completion",
+        "region": "Chapter 7",
+        "category": [
+            "Chapter"
+        ],
+        "requires": "|Chapter 8 Access|"
+    },
+    {
+        "name": "Quest - Heorot's Last Blessing",
+        "region": "Chapter 8",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Passage through Deep Harbor",
+        "region": "Chapter 8",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Deep Harbor Rescue",
+        "region": "Chapter 8",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Liath and Thetima",
+        "region": "Chapter 8",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Destroying the Siege Camp",
+        "region": "Chapter 8",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Liath's Tower",
+        "region": "Chapter 8",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - To Shell With It",
+        "region": "Chapter 8",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Isle of Storms",
+        "region": "Chapter 8",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Sirens and Sailors",
+        "region": "Chapter 8",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Lagon",
+        "region": "Chapter 8",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 8 Completion",
+        "region": "Chapter 8",
+        "category": [
+            "Chapter"
+        ],
+        "requires": "|Chapter 9 Access|"
+    },
+    {
+        "name": "Quest - Journey to Maj'elka",
+        "region": "Chapter 9",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Harton's Idol",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Missing Merchant",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Desert Treasure",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - The Scalebane",
+        "region": "Chapter 9",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Oasis Hunt",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Arjani, the Ruby Commander",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Grand Theft Eagle",
+        "region": "Chapter 9",
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Apophis and Majasa",
+        "region": "Chapter 9",
+        "victory": false,
+        "category": [
+            "Main Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Too Greedily, Too Deep",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Merchants and Fortune Tellers",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Quest - Circle of Fortune/Merchant's Guild Initiation",
+        "region": "Chapter 9",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Chapter 9 Completion",
+        "region": "Chapter 9",
+        "victory": true,
+        "category": [
+            "Chapter"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Old Road (Veteran's Boots)",
+        "region": "Chapter 1",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Fortress Gardens (Short Spear)",
+        "region": "Chapter 1",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Keeper's Vault (Glass Catalyst)",
+        "region": "Chapter 1",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - Ulatri Highlands (Renegade Shield)",
+        "region": "Chapter 1",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Osprix Warcamp (Pike)",
+        "region": "Chapter 1",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Shrouded Ridge (Sash)",
+        "region": "Chapter 2",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Courtyard (Poignard)",
+        "region": "Chapter 3",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - Welryn Outskirts (Root Staff)",
+        "region": "Chapter 4",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - Titan's Canyon (Singularity - Small Eterran Idol)",
+        "region": "Chapter 5",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Tundra (Light Quiver)",
+        "region": "Chapter 7",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - Etendell (Lunar Raiment)",
+        "region": "Chapter 8",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - Lagon's Isle (Astrolabe)",
+        "region": "Chapter 8",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    },
+    {
+        "name": "Cache - The Crossroads (Sapphire Amulet)",
+        "region": "Chapter 9",
+        "category": [
+            "Cache"
+        ],
+        "requires": []
+    }
+]
