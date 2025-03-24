@@ -16,7 +16,7 @@
         "requires": []
     },
     {
-        "name": "Quest - The Keepers Vault",
+        "name": "Quest - The Keeper Vault",
         "region": "Chapter 1",
         "category": [
             "Main Quest"
@@ -32,7 +32,7 @@
         "requires": []
     },
     {
-        "name": "Quest - Missing in the Highland",
+        "name": "Quest - Missing in the Highlands",
         "region": "Chapter 1",
         "category": [
             "Side Quest"
@@ -151,6 +151,14 @@
         ],
         "requires": []
     },
+	{
+        "name": "Quest - The Fate of the Refuge",
+        "region": "Chapter 3",
+        "category": [
+            "Side Quest"
+        ],
+        "requires": []
+    },
     {
         "name": "Quest - An Ancient Hunt",
         "region": "Chapter 3",
@@ -209,7 +217,7 @@
     },
     {
         "name": "Quest - The Power of Mastery",
-        "region": "Chapter 4",
+        "region": "Chapter 2",
         "category": [
             "Main Quest"
         ],
@@ -602,7 +610,7 @@
         "requires": []
     },
     {
-        "name": "Cache - The Keeper's Vault (Glass Catalyst)",
+        "name": "Cache - The Keepers' Vault (Glass Catalyst)",
         "region": "Chapter 1",
         "category": [
             "Cache"
