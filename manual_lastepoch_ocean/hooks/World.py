@@ -92,47 +92,57 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     # We don't need to check if filler_traps is 0 since item pool has already been created
-    # Instead, we count all instances of traps in the item pool, calculate the number of traps of each type based on the ratios, then remove/add to approximately the correct ratio
-    # e.g., if count_traps(item_pool) = 15, option_area_restart = 3, option_discard_movement = 4, then 15/(3+4) ~= 2.14 -> Area Restart Traps = round(3 * 2.14) = 6, Discard Movement traps = round(4 * 2.14) = 9, 15 - (6 + 9) = 0, all traps replaced  
+    # Instead, we count all instances of traps in the item pool, calculate the number of traps of each type based on the ratios, then replace in item pool to approximately the correct ratio
+    # e.g., if count_traps(item_pool) = 15, option_area_restart = 3, option_discard_movement = 4, then 15/(3+4) ~= 2.14 -> Area Restart Traps = floor(3 * 2.14) = 6, Discard Movement traps = floor(4 * 2.14) = 8, 15 - (6 + 8) = 1, add 6 AR traps, 8 DM traps, and 1 filler back into pool  
     new_item_pool = [ i for i in item_pool if i.classification != ItemClassification.trap ] # creates item pool with all traps removed
     item_pool_traps = [ i for i in item_pool if i.classification == ItemClassification.trap ] # creates list of all traps originally in item pool
-    """ the following code can be re-enabled once OptionsDict is resolved for trap weights; note that this still fails to account for low amounts of traps generated, resulting in no traps added
-    if len(item_pool_traps) == 0: # if there are no traps in the item pool
-        return item_pool # return the original item pool
-    else: # if there are any traps in the item pool
-        # grab the values of the trap weights from the YAML
-        area_restart_weight = multiworld.worlds[player].options.TrapWeights.option_area_restart.value
-        discard_movement_weight = multiworld.worlds[player].options.TrapWeights.option_discard_movement.value
+    chosen_options = multiworld.worlds[player].options
+    if len(item_pool_traps) != 0: # may be unnecessary?
+        # grab trap weights from yaml; range from 0 to 100
+        area_restart_weight = chosen_options.area_restart_trap.value
+        #logging.info(f"ARW: {area_restart_weight}")
+        discard_movement_weight = chosen_options.discard_movement_trap.value
+        #logging.info(f"DMW: {discard_movement_weight}")
         
-        # calculate the multiplier for each trap by dividing the total number of traps in the pool by the sum of the trap weights
-        trap_count_mult = len(item_pool_traps) / (area_restart_weight + discard_movement_weight)
+        # if yaml has all trap weights set to 0, there should be no traps in pool
+        if (area_restart_weight + discard_movement_weight) == 0:
+            return item_pool
         
-        # calculate the number of each trap, rounding to the nearest integer
-        area_restart_traps = math.floor(area_restart_weight * trap_count_mult)
-        discard_movement_traps = math.floor(discard_movement_weight * trap_count_mult)
+        # calculate the multiplier to determine number of traps for each trap type
+        trap_count_multi = len(item_pool_traps) / (area_restart_weight + discard_movement_weight)
+        #logging.info(f"Multi: {trap_count_multi}")
         
-        # calculate difference between traps removed and traps to add (should always be 0 or positive)
-        filler_offset = len(item_pool_traps) - (area_restart_traps + discard_movement_traps)
+        # multiply total number of traps by each weight to determine number of traps
+        area_restart_count = math.floor(area_restart_weight * trap_count_multi)
+        #logging.info(f"ARC: {area_restart_count}")
+        discard_movement_count = math.floor(discard_movement_weight * trap_count_multi)
+        #logging.info(f"DMC: {discard_movement_count}")
+        
+        # check remainder in case rounding truncated any traps
+        filler_offset = len(item_pool_traps) - (area_restart_count + discard_movement_count)
         if filler_offset > 0: # if number of traps to fill is less than number of traps originally
+            #logging.info(f"offset: {filler_offset}")
             for _ in range(filler_offset):
                 # add a filler item to the pool for each missing trap filler
                 new_item_pool.append(world.create_item("0 XP"))        
                 
-        # loop over each trap's count and add the traps to the new item pool
-        for _ in range(area_restart_traps): # append an area restart trap for each count of area_restart_traps
+        # add each trap type to new item pool
+        for _ in range(area_restart_count):
             new_item_pool.append(world.create_item("Reset current area / Return to last waypoint"))
-        for _ in range(discard_movement_traps): # append a discard movement trap for each count of discard_movement_traps
+        for _ in range(discard_movement_count): 
             new_item_pool.append(world.create_item("Remove all Movement Speed items until next area"))
-    """ 
-    # following code is substitute until OptionDict for trap weights can be figured out; this instead works as if the trap types are exclusive from one another
+        return new_item_pool
+    else:
+        return item_pool # if no traps in pool, leave it alone
+        
     # vvv this list constructor would perform basically the same thing as the first conditional once appended to new_item_pool
     #traps_list = ["Reset current area / Return to last waypoint" for _ in range(len(item_pool_traps)) if get_option_value(multiworld, player, "trap_choice") == 0]
-    for _ in range(len(item_pool_traps)): # if no traps in item pool, this is skipped
-        if multiworld.worlds[player].options.trap_choice.value == 0: # if TrapChoice is option_area_restart
-            new_item_pool.append(world.create_item("Reset current area / Return to last waypoint"))
-        elif multiworld.worlds[player].options.trap_choice.value == 1: # if TrapChoice is option_discard_movement
-            new_item_pool.append(world.create_item("Remove all Movement Speed items until next area"))
-    return new_item_pool # will return equivalent of item_pool if no traps at all, otherwise returns modified item pool with replaced traps
+    #for _ in range(len(item_pool_traps)): # if no traps in item pool, this is skipped
+    #    if multiworld.worlds[player].options.trap_choice.value == 0: # if TrapChoice is option_area_restart
+    #        new_item_pool.append(world.create_item("Reset current area / Return to last waypoint"))
+    #    elif multiworld.worlds[player].options.trap_choice.value == 1: # if TrapChoice is option_discard_movement
+    #        new_item_pool.append(world.create_item("Remove all Movement Speed items until next area"))
+    #return new_item_pool # will return equivalent of item_pool if no traps at all, otherwise returns modified item pool with replaced traps
 
 # Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.
 def before_set_rules(world: World, multiworld: MultiWorld, player: int):
@@ -150,14 +160,13 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     
     #if Exclude Dungeon Skips is enabled in YAML
     if is_option_enabled(multiworld, player, "exclude_dungeon_skips"):
-        # define lists of each chapter with an associated entrance or exit to a dungeon
-        #dungeon_exit = ['Chapter 4', 'Chapter 7', 'Chapter 9']
-        dungeon_entrance = ['Chapter 2', 'Chapter 4', 'Chapter 5']
-        # also define list of each chapter's exit to be removed
-        exits_to_remove = ['Chapter 2ToChapter 4', 'Chapter 4ToChapter 7', 'Chapter 5ToChapter 9']
+        all_chapters = [ str(i) for i in multiworld.get_regions(player) ] # iterating through all regions, only removing the dungeon skip connections
+        exits_to_remove = ['Chapter 2ToChapter 4', 'Chapter 4ToChapter 3', 'Chapter 4ToChapter 7', 'Chapter 5ToChapter 9'] # Ch4 to Ch3 is a technicality but probably needed?
+        #logging.info("The list of regions is: ")
+        #logging.info(all_chapters)
         
         # remove exits from each chapter leading into a dungeon 
-        for chapter in dungeon_entrance:
+        for chapter in all_chapters:
             region_to_change = multiworld.get_region(chapter, player)
             #logging.info(f"Our current region is {region_to_change}.")
             #logging.info("The list of exits in this region include: ")
@@ -169,14 +178,6 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     multiworld.get_entrance(region_exit.name, player).access_rule = lambda state: False
                 #else:
                     #logging.info(f"This region exit {region_exit} is safe.")
-        
-        # remove entrances from each chapter that leads from a dungeon -- multiworld.get_exit doesn't exist, so maybe only need to remove entrances?
-        """
-        for chapter in dungeon_entrance:
-            region_to_change = multiworld.get_region(chapter, player)
-            for region_entrance in region_to_change.entrances:
-                multiworld.get_exit(region_entrance.name, player).access_rule = lambda state: False
-        """
 
     ## Common functions:
     # location = world.get_location(location_name, player)

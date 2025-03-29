@@ -17,10 +17,11 @@
     "connects_to": [
       "Chapter 4"
     ],
-    "requires": "|Chapter 3 Access|"
+    "requires": "|Chapter 3 Access| OR (|Chapter 2 Access| AND |Lightless Arbor Access||)"
   },
   "Chapter 4": {
     "connects_to": [
+      "Chapter 3",
       "Chapter 5",
       "Chapter 7"
     ],
