@@ -17,7 +17,7 @@
     "connects_to": [
       "Chapter 4"
     ],
-    "requires": "|Chapter 3 Access| OR (|Chapter 2 Access| AND |Lightless Arbor Access||)"
+    "requires": "|Chapter 3 Access| OR (|Chapter 2 Access| AND |Lightless Arbor Access|)"
   },
   "Chapter 4": {
     "connects_to": [
