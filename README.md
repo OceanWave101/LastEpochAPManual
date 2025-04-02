@@ -1,5 +1,6 @@
 # Last Epoch Archipelago Manual
-Archipelago manual world for the game Last Epoch by Eleventh Hour Games\
+Archipelago manual world for the game Last Epoch by Eleventh Hour Games
+
 The current goal for this AP world is to run through the campaign on a new character, with a victory condition of completing Chapter 9 (beating Majasa). Your gear slots, additional passive points, and idol slot expansions are locked behind completing random main quests, side quests, or opening the One-Shot Caches located in the campaign zones. 
 
 ## Requirements
@@ -10,7 +11,7 @@ The current goal for this AP world is to run through the campaign on a new chara
 
 ## Options & Settings
 > [!NOTE]
-> Options marked as (WIP) are works in progress, and are not yet implemented in the current AP world.\
+> Options marked as (WIP) are works in progress, and are not yet implemented in the current AP world.
 
 The [.yaml file](/../Manual_LastEpoch_Ocean.yaml) contains user options for personalizing your experience, including the following:
 - Including or excluding the three dungeons (Lightless Arbor, Soulfire Bastion, and Temporal Sanctum) as campaign skips
@@ -21,7 +22,7 @@ The [.yaml file](/../Manual_LastEpoch_Ocean.yaml) contains user options for pers
 - (WIP) "Areasanity", Merchant's Guild / Circle of Fortune Factions' favor ranks, and more (or less!) location checks
 
 ## How to Play
-*Assumes playing and generating your own world*\
+*Assumes playing and generating your own world*
 
 1. [Install Archipelago](https://archipelago.gg/tutorial/Archipelago/setup/en). 
 2. Download the `manual_lastepoch_ocean.apworld` file and move it into your `Archipelago/custom_worlds` folder where you installed Archipelago.
